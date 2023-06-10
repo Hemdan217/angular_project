@@ -1,0 +1,44 @@
+<div class="container">
+  <form class="row g-3 p-5 m-2" [formGroup]="userRegister" (ngSubmit)="register()">
+    <ng-container *ngFor="let structue of schema">
+      <div class="col-md-6">
+        <label for={{structue.name}} class="form-label">Your {{structue.name}}</label>
+        <input type={{structue.type}} class="form-control " id={{structue.name}} required formControlName={{structue.name}} [ngClass]="{'is-invalid':(userRegister.get(structue.name)?.touched||userRegister.get(structue.name)?.dirty) && userRegister.get(structue.name)?.invalid || 
+        (structue.name=='confirmPassword'&& userRegister.controls['confirmPassword'].value!==userRegister.controls['password'].value)}">
+        <span class="invalid-feedback">
+          <span *ngIf="userRegister.controls[structue.name]?.errors?.['required']">Please enter, This is required</span>
+          <span *ngIf="userRegister.controls[structue.name]?.errors?.['minlength']">Please Enter, Valid Minimum Length</span>
+          <span *ngIf="userRegister.controls[structue.name]?.errors?.['email']">Please Enter, Valid Email </span>
+          <ng-container *ngIf="structue.name=='confirmPassword'">
+            <span *ngIf="userRegister.controls[structue.name].value!==userRegister.controls['password'].value">Please Make Sure To Match </span>
+          </ng-container>
+
+        </span>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+
+      </div>
+    </ng-container>
+
+
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit" [disabled]="!userRegister.valid
+      
+      || userRegister.controls['confirmPassword'].value!==userRegister.controls['password'].value
+      ">Sign Up</button>
+    </div>
+  </form>
+</div>
+
+<!-- <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input " type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" #d required [ngClass]="{'is-invalid':!d.checked}">
+        <label class="form-check-label" for="invalidCheck3">
+          Agree to terms and conditions
+        </label>
+        <div id="invalidCheck3Feedback" class="invalid-feedback" *ngIf="!d.checked">
+          You must agree before submitting.
+        </div>
+      </div>
+    </div> -->

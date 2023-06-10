@@ -1,0 +1,13 @@
+.info div {
+  background: rgb(93, 143, 159);
+  padding: 10px;
+  border-radius: 10px 20px;
+  text-align: center;
+  width: 192px;
+  margin: 10px 0 0 10px;
+  font-size: 14px;
+  color: white;
+}
+.info div:last-child {
+  background: gray;
+}
