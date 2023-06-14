@@ -1,0 +1,10 @@
+<div class="container" *ngIf="productsInCart">
+
+  <div class="list-group">
+    <ng-container *ngFor="let p of productsInCart.cartProducts">
+      <app-basket-item [item]="p"></app-basket-item>
+    </ng-container>
+
+
+  </div>
+</div>

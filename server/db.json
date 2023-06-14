@@ -1,4 +1,107 @@
 {
+  "carts": [
+    {
+      "email": "Hedn",
+      "cartProducts": [],
+      "id": 1
+    },
+    {
+      "email": "Hedn",
+      "cartProducts": [
+        {
+          "name": "Acer Aspire 3 A315-24P-R7VH",
+          "price": 329.99,
+          "url": "https://m.media-amazon.com/images/I/71+1lOl1Y1L._AC_SX355_.jpg",
+          "quantity": 3
+        }
+      ],
+      "id": 2
+    },
+    {
+      "email": "ddd",
+      "cartProducts": [
+        {
+          "name": "Logitech 981-000536 G430 7.1",
+          "price": 184.99,
+          "url": "https://m.media-amazon.com/images/I/81xlboCOT9L._AC_SY355_.jpg",
+          "quantity": 1
+        },
+        {
+          "name": "Logitech K480 Wireless Multi-Device",
+          "price": 34.99,
+          "url": "https://m.media-amazon.com/images/I/61fl+k9O-FL._AC_SY355_.jpg",
+          "quantity": 1
+        }
+      ],
+      "id": 3
+    },
+    {
+      "email": "fff",
+      "cartProducts": [
+        {
+          "name": "Logitech K480 Wireless Multi-Device",
+          "price": 34.99,
+          "url": "https://m.media-amazon.com/images/I/61fl+k9O-FL._AC_SY355_.jpg",
+          "quantity": 1
+        },
+        {
+          "name": "2022 HP Pavilion 17",
+          "price": 628.99,
+          "url": "https://m.media-amazon.com/images/I/61gPlWZqHIL._AC_SX450_.jpg",
+          "quantity": 1
+        }
+      ],
+      "id": 4
+    },
+    {
+      "email": "he",
+      "cartProducts": [
+        {
+          "name": "Amazon Basics Low-Profile Wired",
+          "price": 11.99,
+          "url": "https://m.media-amazon.com/images/I/81cg9myC9kL._AC_SY450_.jpg",
+          "quantity": 1
+        },
+        {
+          "name": "Lenovo 3i Chromebook -",
+          "price": 299.99,
+          "url": "https://m.media-amazon.com/images/I/51pwqs5xEcL._AC_SX355_.jpg",
+          "quantity": 1
+        },
+        {
+          "name": "SAMSUNG Galaxy S22 Ultra",
+          "price": 799.99,
+          "url": "https://m.media-amazon.com/images/I/61nhOdlKpDL._AC_SX355_.jpg",
+          "quantity": 1
+        },
+        {
+          "name": "Apple iPhone 11, 64GB,",
+          "price": 309.99,
+          "url": "https://m.media-amazon.com/images/I/612kg3rGyYL._AC_SX522_.jpg",
+          "quantity": 1
+        }
+      ],
+      "id": 5
+    },
+    {
+      "email": "ffff",
+      "cartProducts": [
+        {
+          "name": "Lenovo 3i Chromebook -",
+          "price": 299.99,
+          "url": "https://m.media-amazon.com/images/I/51pwqs5xEcL._AC_SX355_.jpg",
+          "quantity": 1
+        },
+        {
+          "name": "SAMSUNG Galaxy S22 Ultra",
+          "price": 799.99,
+          "url": "https://m.media-amazon.com/images/I/61nhOdlKpDL._AC_SX355_.jpg",
+          "quantity": 3
+        }
+      ],
+      "id": 6
+    }
+  ],
   "users": [
     {
       "fullName": "hemdan@gmail.com",

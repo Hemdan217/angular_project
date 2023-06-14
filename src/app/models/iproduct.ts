@@ -5,6 +5,6 @@ export interface IProduct {
   url: string;
   price: number;
   quantity?: number;
-  added?: string;
+  added?: boolean;
   description?: any;
 }

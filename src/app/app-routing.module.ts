@@ -12,8 +12,12 @@ const routes: Routes = [
       import('./store/store.module').then((m) => m.StoreModule),
   },
   {
-    path: '',
+    path: 'user',
     loadChildren: () => import('./user/user.module').then((m) => m.UserModule),
+  },
+  {
+    path: 'cart',
+    loadChildren: () => import('./cart/cart.module').then((m) => m.CartModule),
   },
   { path: '**', component: NotFoundComponent, title: '404 Not Found' },
 ];
