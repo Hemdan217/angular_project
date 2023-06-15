@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
+import { MatDialogModule } from '@angular/material/dialog';
 import { AppComponent } from './app.component';
 import { StoreModule } from './store/store.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -44,6 +45,7 @@ import { ScrollAnimationDirective } from './directives/scroll-animation.directiv
     BrowserAnimationsModule,
     NgxSpinnerModule,
     NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' }),
+    MatDialogModule,
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true },
