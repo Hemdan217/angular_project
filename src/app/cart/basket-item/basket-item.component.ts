@@ -13,7 +13,6 @@ export class BasketItemComponent {
   constructor(private cartService: CartService) {}
   increaseQuantity(item: ICartProduct) {
     item.quantity = item?.quantity ? ++item.quantity || 1 : 1;
-    console.log(item);
 
     this.updateCart(item);
 
@@ -22,7 +21,7 @@ export class BasketItemComponent {
 
   decreaseQuantity(item: ICartProduct) {
     item.quantity = item?.quantity ? --item.quantity || 0 : 0;
-    console.log(item);
+
     if (item.quantity) {
       this.updateCart(item);
     } else {

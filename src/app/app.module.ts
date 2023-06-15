@@ -15,9 +15,12 @@ import {
   HttpClientModule,
 } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { LoadingInterceptor } from './utils/loading.interceptor';
 import { NotFoundComponent } from './layout/not-found/not-found.component';
+import { UserCreditPipe } from './pipes/user-credit.pipe';
+import { ScrollAnimationDirective } from './directives/scroll-animation.directive';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,8 @@ import { NotFoundComponent } from './layout/not-found/not-found.component';
     ContainerComponent,
     LandingComponent,
     NotFoundComponent,
+    UserCreditPipe,
+    ScrollAnimationDirective,
   ],
   imports: [
     BrowserModule,

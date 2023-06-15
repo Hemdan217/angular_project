@@ -9,3 +9,10 @@ export interface ICart {
   id?: number;
   cartProducts: ICartProduct[];
 }
+export interface IOrder extends ICart {
+  firstName: string;
+  lastName: string;
+  address: string;
+  total: number;
+  status: string;
+}

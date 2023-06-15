@@ -24,6 +24,11 @@ export class CartApiServiceService {
       `${environment.baseAPIURL}/carts?email=${email}`
     );
   }
+  removeCart(id: number) {
+    return this.httpclient.delete<ICart>(
+      `${environment.baseAPIURL}/carts/${id}`
+    );
+  }
   updateCart(id: number, cartProducts: ICart): Observable<ICart> {
     return this.httpclient.patch<ICart>(
       `${environment.baseAPIURL}/carts/${id}`,

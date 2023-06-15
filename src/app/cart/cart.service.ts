@@ -28,18 +28,14 @@ export class CartService {
               email: data[0].email,
               cartProducts: data[0].cartProducts,
             })
-            .subscribe((data) => {
-              console.log(data);
-            });
+            .subscribe((data) => {});
         } else {
           this.cartService
             .addToCart({
               email: localStorage.getItem('email') as string,
               cartProducts: [cartProduct],
             })
-            .subscribe((data) => {
-              console.log(data);
-            });
+            .subscribe((data) => {});
         }
       });
   }
@@ -60,9 +56,7 @@ export class CartService {
                   return pro.name.toLowerCase() != name.toLowerCase();
                 }),
               })
-              .subscribe((data) => {
-                console.log(data);
-              });
+              .subscribe((data) => {});
           }
         }
       });
@@ -109,10 +103,17 @@ export class CartService {
               email: data[0].email,
               cartProducts: data[0].cartProducts,
             })
-            .subscribe((data) => {
-              console.log(data);
-            });
+            .subscribe((data) => {});
         }
       });
+  }
+  emptyCart(email: string) {
+    this.cartService.cartProducts(email).subscribe((data) => {
+      if (data[0]?.email) {
+        this.cartService
+          .removeCart(data[0].id as number)
+          .subscribe((data) => {});
+      }
+    });
   }
 }

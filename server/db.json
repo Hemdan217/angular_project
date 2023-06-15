@@ -1,4 +1,117 @@
 {
+  "orders": [
+    {
+      "firstName": "",
+      "lastName": "",
+      "address": "",
+      "email": "",
+      "total": 0,
+      "cartProducts": [],
+      "id": 1
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "address": "",
+      "email": "",
+      "total": 0,
+      "id": 44,
+      "cartProducts": []
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "address": "",
+      "email": "",
+      "total": 0,
+      "id": 13694599,
+      "cartProducts": []
+    },
+    {
+      "firstName": "(click)=\"applyDiscount(code.value)\"",
+      "lastName": "(click)=\"applyDiscount(code.value)\"",
+      "address": "(click)=\"applyDiscount(code.value)\"",
+      "email": "hemdan",
+      "total": 1399.97,
+      "id": 26654446,
+      "cartProducts": [
+        {
+          "name": "SAMSUNG Galaxy S22 Ultra",
+          "price": 799.99,
+          "url": "https://m.media-amazon.com/images/I/61nhOdlKpDL._AC_SX355_.jpg",
+          "quantity": 1
+        },
+        {
+          "name": "Lenovo 3i Chromebook -",
+          "price": 299.99,
+          "url": "https://m.media-amazon.com/images/I/51pwqs5xEcL._AC_SX355_.jpg",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "firstName": "he@gmailc.com",
+      "lastName": "he@gmailc.com",
+      "address": "he@gmailc.com",
+      "email": "he@gmailc.com",
+      "total": 580.185,
+      "id": 45031727,
+      "status": "pending",
+      "cartProducts": [
+        {
+          "name": "SAMSUNG Galaxy S22 Ultra",
+          "price": 799.99,
+          "url": "https://m.media-amazon.com/images/I/61nhOdlKpDL._AC_SX355_.jpg",
+          "quantity": 2
+        },
+        {
+          "name": "Amazon Basics Low-Profile Wired",
+          "price": 11.99,
+          "url": "https://m.media-amazon.com/images/I/81cg9myC9kL._AC_SY450_.jpg",
+          "quantity": 2
+        },
+        {
+          "name": "Apple iPhone 11, 64GB,",
+          "price": 309.99,
+          "url": "https://m.media-amazon.com/images/I/612kg3rGyYL._AC_SX522_.jpg",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "address": "",
+      "email": "",
+      "total": 0,
+      "id": 6546278,
+      "status": "pending",
+      "cartProducts": []
+    },
+    {
+      "firstName": "profile",
+      "lastName": "profile",
+      "address": "profile",
+      "email": "he@gmailc.com",
+      "total": 311.98,
+      "id": 17422666,
+      "status": "pending",
+      "cartProducts": [
+        {
+          "name": "Lenovo 3i Chromebook -",
+          "price": 299.99,
+          "url": "https://m.media-amazon.com/images/I/51pwqs5xEcL._AC_SX355_.jpg",
+          "quantity": 1
+        },
+        {
+          "name": "Amazon Basics Low-Profile Wired",
+          "price": 11.99,
+          "url": "https://m.media-amazon.com/images/I/81cg9myC9kL._AC_SY450_.jpg",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
   "carts": [
     {
       "email": "Hedn",
@@ -87,19 +200,60 @@
       "email": "ffff",
       "cartProducts": [
         {
+          "name": "SAMSUNG Galaxy S22 Ultra",
+          "price": 799.99,
+          "url": "https://m.media-amazon.com/images/I/61nhOdlKpDL._AC_SX355_.jpg",
+          "quantity": 6
+        },
+        {
+          "name": "ASUS Vivobook 14 FHD",
+          "price": 489.99,
+          "url": "https://m.media-amazon.com/images/I/61u6A1ecsiL.__AC_SY300_SX300_QL70_FMwebp_.jpg",
+          "quantity": 7
+        },
+        {
           "name": "Lenovo 3i Chromebook -",
           "price": 299.99,
           "url": "https://m.media-amazon.com/images/I/51pwqs5xEcL._AC_SX355_.jpg",
           "quantity": 1
-        },
+        }
+      ],
+      "id": 6
+    },
+    {
+      "email": "hemdan",
+      "cartProducts": [
         {
           "name": "SAMSUNG Galaxy S22 Ultra",
           "price": 799.99,
           "url": "https://m.media-amazon.com/images/I/61nhOdlKpDL._AC_SX355_.jpg",
-          "quantity": 3
+          "quantity": 1
+        },
+        {
+          "name": "Lenovo 3i Chromebook -",
+          "price": 299.99,
+          "url": "https://m.media-amazon.com/images/I/51pwqs5xEcL._AC_SX355_.jpg",
+          "quantity": 2
         }
       ],
-      "id": 6
+      "id": 7
+    },
+    {
+      "email": "hemdan21479@gmail.com",
+      "cartProducts": [],
+      "id": 8
+    },
+    {
+      "email": "hemdan21479@gmail.com",
+      "cartProducts": [
+        {
+          "name": "Lenovo 3i Chromebook -",
+          "price": 299.99,
+          "url": "https://m.media-amazon.com/images/I/51pwqs5xEcL._AC_SX355_.jpg",
+          "quantity": 1
+        }
+      ],
+      "id": 9
     }
   ],
   "users": [
@@ -138,6 +292,24 @@
       "email": "this.userRegister.value.email@ddd",
       "password": "this.userRegister.value.email@ddd",
       "id": 6
+    },
+    {
+      "fullName": "Hemdan",
+      "email": "hemdan219@gmail.com",
+      "password": "                <br>",
+      "id": 7
+    },
+    {
+      "fullName": "Hemdan",
+      "email": "hemdan21479@gmail.com",
+      "password": "hemdan219@gmail.com",
+      "id": 8
+    },
+    {
+      "fullName": "he@gmailc.com",
+      "email": "he@gmailc.com",
+      "password": "he@gmailc.com",
+      "id": 9
     }
   ],
   "products": [

@@ -4,7 +4,7 @@ import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BasketComponent } from './basket/basket.component';
 import { BasketItemComponent } from './basket-item/basket-item.component';
 
@@ -24,7 +24,6 @@ const routes: Routes = [
     CartComponent,
     CheckoutComponent,
     BasketComponent,
-
     BasketItemComponent,
   ],
   imports: [
@@ -32,6 +31,7 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

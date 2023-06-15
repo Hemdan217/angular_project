@@ -24,7 +24,6 @@ export class StoreApiService {
     if (brand) query += '&description.Brand=' + brand;
     if (category) query += '&category=' + category;
     if (keyword) query += '&name_like=' + keyword;
-    console.log(query);
     return this.httpclient.get<IProduct[]>(
       `${environment.baseAPIURL}/products?${query}`
     );

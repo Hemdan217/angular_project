@@ -26,32 +26,32 @@ export class ProductDetailsComponent implements OnInit {
         next: (value) => {
           this.product = value;
           this.product.quantity = 1;
+          this.cartService
+            .cartProducts(localStorage.getItem('email') as string)
+            .subscribe((data) => {
+              if (data[0]?.email) {
+                let existingProduct = data[0]?.cartProducts.find((product) => {
+                  return (
+                    product?.name.toLowerCase() ==
+                    this.product.name.toLowerCase()
+                  );
+                });
+                if (existingProduct) {
+                  this.product.added = true;
+                  this.product.quantity = existingProduct.quantity;
+                }
+              }
+            });
         },
         error: (err) => {
           this.router.navigate(['/**']);
         },
       });
-
-      this.cartService
-        .cartProducts(localStorage.getItem('email') as string)
-        .subscribe((data) => {
-          if (data[0]?.email) {
-            let existingProduct = data[0]?.cartProducts.find((product) => {
-              return (
-                product?.name.toLowerCase() == this.product.name.toLowerCase()
-              );
-            });
-            if (existingProduct) {
-              this.product.added = true;
-              this.product.quantity = existingProduct.quantity;
-            }
-          }
-        });
     });
   }
   increaseQuantity(product: IProduct) {
     product.quantity = product?.quantity ? ++product.quantity || 1 : 1;
-    console.log(product);
+
     if (product.added) {
       this.updateCart(product);
     }
@@ -60,7 +60,7 @@ export class ProductDetailsComponent implements OnInit {
 
   decreaseQuantity(product: IProduct) {
     product.quantity = product?.quantity ? --product.quantity || 0 : 0;
-    console.log(product);
+
     if (product.added && product.quantity) {
       this.updateCart(product);
     } else if (product.added) {

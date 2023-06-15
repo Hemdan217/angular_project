@@ -1,27 +1,43 @@
 <div class="container">
-  <form class="row g-3 p-5 m-2" [formGroup]="userLogin" (ngSubmit)="login()">
-    <ng-container *ngFor="let structue of schema">
-      <div class="col-md-6">
-        <label for={{structue.name}} class="form-label">Your {{structue.name}}</label>
-        <input type={{structue.type}} class="form-control " id={{structue.name}} required formControlName={{structue.name}} [ngClass]="{'is-invalid':(userLogin.get(structue.name)?.touched||userLogin.get(structue.name)?.dirty) && userLogin.get(structue.name)?.invalid}">
-        <span class="invalid-feedback">
-          <span *ngIf="userLogin.controls[structue.name]?.errors?.['required']">Please enter, This is required</span>
-          <span *ngIf="userLogin.controls[structue.name]?.errors?.['minlength']">Please Enter, Valid Minimum Length</span>
-          <span *ngIf="userLogin.controls[structue.name]?.errors?.['email']">Please Enter, Valid Email </span>
+  <div class="row">
+    <div class="col-md-6 text-center">
 
-        </span>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-
-      </div>
-    </ng-container>
-
-
-    <div class="col-12">
-      <button class="btn btn-primary" type="submit" [disabled]="!userLogin.valid">Login</button>
+      <img src="./assets/14.png" alt="" srcset="" style="width:70%">
     </div>
-  </form>
+    <div class="col-md-6">
+      <form class="row g-3 p-5 m-2" [formGroup]="userLogin" (ngSubmit)="login()">
+        <ng-container *ngFor="let structue of schema">
+
+          <label for={{structue.name}} class="form-label">Your {{structue.name}}</label>
+          <input type={{structue.type}} class="form-control " id={{structue.name}} required formControlName={{structue.name}} [ngClass]="{'is-invalid':(userLogin.get(structue.name)?.touched||userLogin.get(structue.name)?.dirty) && userLogin.get(structue.name)?.invalid}">
+          <span class="invalid-feedback">
+            <span *ngIf="userLogin.controls[structue.name]?.errors?.['required']">Please enter, This is required</span>
+            <span *ngIf="userLogin.controls[structue.name]?.errors?.['minlength']">Please Enter, Valid Minimum Length</span>
+            <span *ngIf="userLogin.controls[structue.name]?.errors?.['email']">Please Enter, Valid Email </span>
+
+          </span>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+
+
+
+        </ng-container>
+
+
+
+        <button class="btn btn-primary" type="submit" [disabled]="!userLogin.valid">Login</button>
+
+      </form>
+
+
+      <span class="p-5 m-2">Haven't you account<a class="m-2 text-primary text-decoration-none" routerLink="/user/register">Sign Up</a>
+      </span>
+
+
+
+    </div>
+  </div>
 </div>
 
 <!-- <div class="col-12">

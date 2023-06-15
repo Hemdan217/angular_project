@@ -19,6 +19,7 @@ export class LoadingInterceptor implements HttpInterceptor {
     if (!request.url.includes('carts')) {
       this.spinnerService.show();
     }
+
     return next.handle(request).pipe(
       delay(1000),
       finalize(() => this.spinnerService.hide())

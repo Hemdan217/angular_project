@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
 import { UserApiService } from '../user-api.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -11,7 +12,11 @@ export class RegisterComponent implements OnInit {
   userRegister: FormGroup;
   schema: any;
   s: any;
-  constructor(private fb: FormBuilder, private userService: UserApiService) {
+  constructor(
+    private fb: FormBuilder,
+    private userService: UserApiService,
+    private router: Router
+  ) {
     this.userRegister = this.fb.group({
       fullName: ['', [Validators.required, Validators.minLength(5)]],
       email: ['', [Validators.required, Validators.email]],
@@ -37,7 +42,6 @@ export class RegisterComponent implements OnInit {
       .getUser(this.userRegister.value.email)
       .subscribe((data) => {
         if (data[0]?.email == this.userRegister.value.email) {
-          console.log(data);
           this.s.fire({
             title: 'User registration Failed, This Email already exists',
             icon: 'error',
@@ -50,6 +54,7 @@ export class RegisterComponent implements OnInit {
                 title: 'User Registration Done',
                 icon: 'success',
               });
+              this.router.navigate(['/user/login']);
             });
         }
       });

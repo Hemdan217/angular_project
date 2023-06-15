@@ -68,7 +68,6 @@ export class ProductsComponent implements OnInit {
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-    console.log('ojpfdijfifn');
     this.activateRoute.queryParamMap.subscribe((params) => {
       this._page = params.get('page') ? Number(params.get('page')) : 1;
       this.loadProducts();

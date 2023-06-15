@@ -10,7 +10,9 @@ export class AuthService {
     this.UserAuthBehavior = new BehaviorSubject<boolean>(this.isAuthenticated);
   }
   get isAuthenticated(): boolean {
-    return localStorage.getItem('token') ? true : false;
+    return localStorage.getItem('token') && localStorage.getItem('email')
+      ? true
+      : false;
   }
   userLoggedIn(email: string, password: string): void {
     let userToken = '987654';
@@ -20,6 +22,7 @@ export class AuthService {
   }
   userLoggedOut(): void {
     localStorage.removeItem('token');
+    localStorage.removeItem('email');
     this.UserAuthBehavior.next(this.isAuthenticated);
   }
 

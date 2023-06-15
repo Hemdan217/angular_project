@@ -28,8 +28,6 @@ export class ProductCardComponent implements OnInit {
       });
   }
   removeFromCart(product: IProduct) {
-    console.log(product.name);
-    console.log(this.product.name);
     this.cartService.removeProductFromCart(product.name);
     product.added = false;
     return product;

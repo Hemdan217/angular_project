@@ -23,9 +23,13 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/ngx-spinner/animations/ball-climbing-dot.css",
               "node_modules/ngx-spinner/animations/ball-grid-pulse.css",
+              "node_modules/aos/dist/aos.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/aos/dist/aos.js",
+              "node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {

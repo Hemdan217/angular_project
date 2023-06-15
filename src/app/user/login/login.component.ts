@@ -44,7 +44,7 @@ export class LoginComponent {
           title: 'Login Done',
           icon: 'success',
         });
-        this.userAuth.userLoggedIn('hemdan', 'lhdjh');
+        this.userAuth.userLoggedIn(email, password);
         this.router.navigate(['/products']);
       }
     });

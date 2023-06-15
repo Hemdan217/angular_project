@@ -1,10 +1,28 @@
-<div class="container" *ngIf="productsInCart">
+<div class="container" style="min-height:50vh">
+  <ng-container *ngIf="productsInCart;else noData">
+    <div class="list-group" *ngIf="productsInCart.cartProducts">
+      <ng-container *ngIf="productsInCart.cartProducts.length">
+        <ng-container *ngFor="let p of productsInCart.cartProducts">
+          <app-basket-item [item]="p"></app-basket-item>
+        </ng-container>
+        <button class="btn btn-outline-dark mt-5">
+          <a class="nav-link btn" routerLink="/cart/cart">Go To Shipping</a>
 
-  <div class="list-group">
-    <ng-container *ngFor="let p of productsInCart.cartProducts">
-      <app-basket-item [item]="p"></app-basket-item>
-    </ng-container>
+        </button>
+      </ng-container>
+
+    </div>
+  </ng-container>
 
 
-  </div>
 </div>
+<ng-template #noData>
+  <div class="text-center mt-5">
+    <h1>You Did Not Add Any Products</h1>
+
+    <button class="btn btn-outline-dark">
+      <a class="nav-link btn" routerLink="/products">Go To Shopping</a>
+
+    </button>
+  </div>
+</ng-template>

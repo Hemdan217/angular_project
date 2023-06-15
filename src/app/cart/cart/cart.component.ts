@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { CartService } from '../cart.service';
 import { ICart } from '../../models/icart';
+import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { OrderService } from './../order.service';
 
 @Component({
   selector: 'app-cart',
@@ -13,8 +16,23 @@ export class CartComponent {
   total: number = 0;
   discount: number = 0;
   promoCode: string = '';
-  constructor(private cartService: CartService) {
+  userInfo: FormGroup;
+  schema: any;
+  s: any;
+  constructor(
+    private cartService: CartService,
+    private fb: FormBuilder,
+    private orderService: OrderService,
+    private router: Router
+  ) {
     this.userEmail = localStorage.getItem('email') as string;
+
+    this.userInfo = this.fb.group({
+      firstName: ['', [Validators.required, Validators.minLength(5)]],
+      lastName: ['', [Validators.required, Validators.minLength(5)]],
+      address: ['', [Validators.required, Validators.minLength(5)]],
+      address2: ['', [Validators.minLength(5)]],
+    });
   }
   ngOnInit() {
     this.cartService.cartProducts(this.userEmail).subscribe((data) => {
@@ -37,5 +55,18 @@ export class CartComponent {
     this.productsInCart.cartProducts.forEach((product) => {
       this.total += product.price * product.quantity;
     });
+  }
+
+  makeOrder() {
+    const { firstName, lastName, address } = this.userInfo.value;
+    this.orderService.makeOrder(
+      firstName,
+      lastName,
+      address,
+      this.userEmail,
+      this.total,
+      this.productsInCart.cartProducts
+    );
+    this.router.navigate(['/cart/checkout']);
   }
 }
