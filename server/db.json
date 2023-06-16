@@ -266,6 +266,18 @@
         }
       ],
       "id": 10
+    },
+    {
+      "email": "hemdan217@gmail.com",
+      "cartProducts": [
+        {
+          "name": "Lenovo 3i Chromebook -",
+          "price": 299.99,
+          "url": "https://m.media-amazon.com/images/I/51pwqs5xEcL._AC_SX355_.jpg",
+          "quantity": 3
+        }
+      ],
+      "id": 11
     }
   ],
   "users": [
@@ -647,6 +659,26 @@
         "Color": "Blue/Black",
         "Form Factor": "closed-back",
         "Connectivity Technology": "Wired"
+      }
+    },
+    {
+      "id": 17,
+      "name": "2022 HP Pavilion 17",
+      "about": "【Processor】AMD Ryzen 3 3250U (2.6 GHz base clock, up to 3.5 GHz max boost clock, 4 MB L3 cache, 2 cores, 4 threads)| AMD Radeon Graphics 【Display】17.3\" diagonal, HD+ (1600 x 900), touch, BrightView, 250 nits, 60% NTSC, enjoy your photos, movies, and games with the crisp quality. 【RAM and Storage】RAM is upgraded to 16GB high-bandwidth RAM (Model #:7EH99AA#ABB) to smoothly run multiple applications and browser tabs all at once; Hard Drive is upgraded to 256GB PCIe NVMe Solid State Drive + 1TB Hard Disk Drive allows to fast bootup and data transfe and large file storage. 【Tech Specs】1 SuperSpeed USB Type-C 5Gbps signaling rate, 2 SuperSpeed USB Type-A 5Gbps signaling rate, 1 HDMI 1.4b, 1 AC smart pin, 1 headphone/microphone combo | Webcam | Wi-Fi 6| Bluetooth 5.2 | Windows 10 Home 64-bit (Free Upgrade to Windows 11 Home) 【Included in the package】Bundled with Oydisen Cloth › See more product details",
+      "url": "https://m.media-amazon.com/images/I/61gPlWZqHIL._AC_SX450_.jpg",
+      "category": "laptop",
+      "price": 628.99,
+      "description": {
+        "Brand": "HP",
+        "Series": "Pavilion 17",
+        "Screen Size": "17.3 Inches",
+        "Color": "Silver",
+        "Hard Disk Size": "256 GB",
+        "CPU Model": "Ryzen 3 3250U",
+        "Ram Memory Installed Size": "16 GB",
+        "Operating System": "Windows 10",
+        "Card Description": "Integrated",
+        "Graphics Coprocessor": "AMD Radeon™ Graphics"
       }
     },
     {
@@ -1114,6 +1146,26 @@
       }
     },
     {
+      "id": 44,
+      "name": "MageGee Portable 60% Mechanical",
+      "about": "Mini portable 60% compact layout: MK-Box is a 68 keys mechanical keyboard have cute small size, separate arrow keys and all your F-keys you need, can use it for gaming or work while saving space. Mechanical red switch: characterized for being linear and smoother, slight key sound has no paragraph sense with minimal resistance, but fast action without a tactile bump feel which makes it easier to tap the keyboard. Classic charming blue LED backlit: Customize multiple illuminated LED light effects, supports about 15 backlight modes, press Fn + Ins can control it, FN + ←/→ control backlight speed, FN + ↑/↓ control backlight brightness. Full anti-ghosting keyboard: all 68 keys are no conflict, black grey red mash up design, ergonomic suspension double-color injection keycap, double kickstand feet adjustable typing angle and detachable usb cable, both practical and beautiful. Extensive compatibility: MageGee MK-Box mechanical keyboards use USB 2.0 connector making it compatible with Windows (2000, XP, ME, Vista, 7, 8), Linux and Mac, plug and play, no drivers or software required.",
+      "url": "https://m.media-amazon.com/images/I/618zZ7u3sUL._AC_SY450_.jpg",
+      "category": "keyboard",
+      "price": 29.99,
+      "description": {
+        "Brand": "MageGee",
+        "Compatible Devices": "Laptop, PC",
+        "Connectivity Technology": "USB",
+        "Keyboard Description": "Mechanical, Gaming",
+        "Recommended Uses For Product": "Multimedia, Gaming",
+        "Special Feature": "Portable, Ergonomics, Backlit, Trackpad",
+        "Color": "Black/Red Switch",
+        "Operating System": "Windows 2000, Windows XP, Windows Vista, Windows 7, Windows 8, Windows Vista, Mac OS",
+        "Number of Keys": "68",
+        "Keyboard backlighting color support": "Single Color"
+      }
+    },
+    {
       "id": 45,
       "name": "Total by Verizon Samsung",
       "about": "Carrier: This phone is locked to Total by Verizon, which means this device can only be used on the Total by Verizon wireless network. Capture life on the go in perfect detail with a 13MP main camera. 6.5\" HD+ LCD display, and 32GB storage expandable all the way up to 1TB. Relive your memories all day long with a 5,000mAh battery. Compatible with our no-contract talk, text & data plans that start at $30/mo.",
@@ -1131,6 +1183,26 @@
         "Color": "BLACK",
         "Screen Size": "6.51 Inches",
         "Wireless network technology": "LTE"
+      }
+    },
+    {
+      "id": 46,
+      "name": "HP Chromebook Laptop 14a-na1043cl",
+      "about": "- High-performance: Equipped with an Intel Celeron N4500 processor and 4GB of RAM, this Chromebook provides fast and responsive performance for all your computing needs. - Impressive visuals: The 14-inch Full HD (1920x1080) display offers stunning visuals and vibrant colors for an immersive viewing experience, making it great for streaming movies, browsing the web, or working on creative projects. - All-day battery life: With a battery life of up to 11 hours, you can use your Chromebook all day without worrying about running out of power. Plus, it charges quickly and efficiently, so you can get back to work or play in no time. - Sleek and lightweight design: The HP Chromebook 14a-na1043cl has a slim and lightweight design, making it easy to take with you wherever you go. It's also built with durable materials to withstand daily wear and tear. - Chrome OS: This Chromebook runs on Chrome OS, which offers a user-friendly interface and easy access to your favorite Google apps and services. Plus, it comes with built-in virus protection and automatic updates, so you can enjoy peace of mind knowing your device is secure and up-to-date. › See more product details",
+      "url": "https://m.media-amazon.com/images/I/7126qfL1vhL._AC_SX355_.jpg",
+      "category": "laptop",
+      "price": 164.99,
+      "description": {
+        "Brand": "HP",
+        "Series": "Chromebook",
+        "Screen Size": "14 Inches",
+        "Color": "Mineral Silver",
+        "Hard Disk Size": "64 GB",
+        "CPU Model": "Pentium D",
+        "Ram Memory Installed Size": "4 GB",
+        "Operating System": "Chrome OS",
+        "Card Description": "Integrated",
+        "Graphics Coprocessor": "Intel"
       }
     }
   ],
